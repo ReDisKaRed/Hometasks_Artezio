@@ -3,8 +3,8 @@
 
 def func_ex(numbers):
     """Обрабокта исключений."""
-    if len(numbers) > 2:
-        sep = numbers.split()
+    sep = numbers.split()
+    if len(sep) > 1:
         try:
             answer = int(sep[0])/int(sep[1])
         except ValueError as err:
