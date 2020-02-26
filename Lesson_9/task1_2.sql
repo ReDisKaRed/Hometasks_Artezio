@@ -28,4 +28,4 @@ SELECT people.first_name, people.last_name, money FROM people WHERE money < 3000
 SELECT people.first_name, people.last_name, job.position, money 
 FROM people 
 INNER JOIN positions job ON people.position_id=job.id 
-WHERE money < 30000;
+WHERE job.position='manager' AND money < 30000;
